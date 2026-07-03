@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #2e406b;
+    --secondaryBackground: #1e293b;
+    --text: #f1f5f9;
+    --accent: #8b5cf6;
+    --highlight: #49aed6;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 120px auto 0 auto;
+    max-width: 500px;
+    padding: 0 20px;
+}
+
+.stats-container {
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    background: var(--secondaryBackground);
+}
+
+.details {
+    width: 100%;
+}
+
+.details h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.details p {
+    font-size: 14px;
+    color: var(--highlight);
+}
+
+#progressbar {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--accent);
+    margin-top: 20px;
+}
+
+#progress {
+    height: 10px;
+    width: 0%;
+    border-radius: 10px;
+    background-color: var(--highlight);
+    transition: all 0.3s ease;
+}
+
+#numbers {
+    width: 100px;
+    height: 100px;
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 20px;
+    background: var(--secondaryBackground);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    outline: none;
+    color: var(--text);
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+input:focus {
+    border-color: var(--highlight);
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--highlight);
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent);
+    transform: scale(1.05);
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskitem {
+    background-color: var(--secondaryBackground);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 2px solid var(--accent);
+    transition: all 0.3s ease;
+}
+
+.taskitem:hover {
+    border-color: var(--highlight);
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: none;
+}
+
+.task input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--highlight);
+    cursor: pointer;
+}
+
+.task p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.completed p {
+    text-decoration: line-through;
+    color: var(--highlight);
+    opacity: 0.6;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.taskitem img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.taskitem img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.icons i {
+  cursor: pointer;
+  margin: 0 8px;
+  font-size: 18px;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.icons i:hover {
+  color: #e74c3c; /* red on hover */
+}

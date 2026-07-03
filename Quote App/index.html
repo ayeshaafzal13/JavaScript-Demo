@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator - JavaScript Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quote-box">
+            <div class="icon">💬</div>
+            <h1>Random Quote Generator</h1>
+            <p class="subtitle">Demonstrates: Promises • Async/Await • DOM Manipulation</p>
+
+            <!-- Loading State -->
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading quote...</p>
+            </div>
+
+            <!-- Quote Content -->
+            <div id="quoteContent" class="hidden">
+                <div class="quote-display">
+                    <div class="quote-mark">"</div>
+                    <p class="quote-text" id="quoteText">The only way to do great work is to love what you do.</p>
+                    <p class="quote-author" id="quoteAuthor">— Steve Jobs</p>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-primary" id="newQuoteBtn">
+                        ✨ New Quote
+                    </button>
+                    <button class="btn btn-secondary" id="copyBtn">
+                        📋 Copy
+                    </button>
+                </div>
+
+                <div class="stats">
+                    <span>Total Quotes: <strong id="totalQuotes">0</strong></span>
+                    <span>Favorites: <strong id="favoriteCount">0</strong></span>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-favorite" id="favoriteBtn">
+                        ⭐ Add to Favorites
+                    </button>
+                </div>
+            </div>
+
+            <!-- Favorites Section -->
+            <div id="favoritesSection" class="favorites-section hidden">
+                <h3>⭐ Your Favorite Quotes</h3>
+                <div id="favoritesList"></div>
+            </div>
+
+            <!-- Info Box -->
+            <div class="info-box">
+                <strong>🧠 Concepts Demonstrated:</strong><br>
+                <span class="tag">Promises</span>
+                <span class="tag">Async/Await</span>
+                <span class="tag">DOM Manipulation</span>
+                <span class="tag">Event Handling</span>
+                <span class="tag">Local Storage</span>
+            </div>
+
+            <a href="../index.html" class="back-link">← Back to all demos</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
