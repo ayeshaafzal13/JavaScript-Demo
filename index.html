@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demos - Dev Weekend</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 0.3rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .demo-card {
+            background: white;
+            padding: 2rem 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .demo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .demo-icon {
+            font-size: 3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .demo-card h3 {
+            color: #333;
+            margin-bottom: 0.3rem;
+            font-size: 1.1rem;
+        }
+
+        .demo-card p {
+            color: #888;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .demo-card .concepts {
+            font-size: 0.7rem;
+            color: #aaa;
+            margin-top: 0.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 JavaScript Demos</h1>
+        <p class="subtitle">Dev Weekend - Full Stack Developer Journey</p>
+
+        <div class="demo-grid">
+            <a href="Counter/" class="demo-card">
+                <div class="demo-icon">📊</div>
+                <h3>Counter App</h3>
+                <p>Scope • Closures • Hoisting</p>
+                <div class="concepts">Increment, Decrement, Reset</div>
+            </a>
+
+            <a href="To Do List/" class="demo-card">
+                <div class="demo-icon">✅</div>
+                <h3>To-Do List</h3>
+                <p>DOM Manipulation • Events</p>
+                <div class="concepts">Add, Delete, Complete</div>
+            </a>
+
+            <a href="Quote App/" class="demo-card">
+                <div class="demo-icon">💬</div>
+                <h3>Quote Generator</h3>
+                <p>Promises • Async/Await</p>
+                <div class="concepts">Random Quotes, Favorites</div>
+            </a>
+        </div>
+
+        <p class="footer">Made with ❤️ for Dev Weekend</p>
+    </div>
+</body>
+</html>
